@@ -13,15 +13,15 @@
     "absolutePath": "/d/Code/Conflux/JustDonate/CharityFactory/library/CharityLib.sol",
     "exportedSymbols": {
       "CharityLib": [
-        372
+        503
       ]
     },
-    "id": 373,
+    "id": 504,
     "license": null,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 344,
+        "id": 475,
         "literals": [
           "solidity",
           ">=",
@@ -41,25 +41,25 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 372,
+        "id": 503,
         "linearizedBaseContracts": [
-          372
+          503
         ],
         "name": "CharityLib",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "CharityLib.info",
-            "id": 371,
+            "id": 502,
             "members": [
               {
                 "constant": false,
-                "id": 346,
+                "id": 477,
                 "mutability": "mutable",
                 "name": "id",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "81:8:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -68,7 +68,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 345,
+                  "id": 476,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "81:4:1",
@@ -82,12 +82,12 @@
               },
               {
                 "constant": false,
-                "id": 348,
+                "id": 479,
                 "mutability": "mutable",
                 "name": "sponsor",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "118:15:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -96,7 +96,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 347,
+                  "id": 478,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "118:7:1",
@@ -111,12 +111,12 @@
               },
               {
                 "constant": false,
-                "id": 350,
+                "id": 481,
                 "mutability": "mutable",
                 "name": "helper",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "164:14:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -125,7 +125,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 349,
+                  "id": 480,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "164:7:1",
@@ -140,12 +140,12 @@
               },
               {
                 "constant": false,
-                "id": 352,
+                "id": 483,
                 "mutability": "mutable",
                 "name": "sponsorName",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "213:18:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -154,7 +154,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 351,
+                  "id": 482,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "213:6:1",
@@ -168,12 +168,12 @@
               },
               {
                 "constant": false,
-                "id": 354,
+                "id": 485,
                 "mutability": "mutable",
                 "name": "helperName",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "272:17:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -182,7 +182,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 353,
+                  "id": 484,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "272:6:1",
@@ -196,12 +196,12 @@
               },
               {
                 "constant": false,
-                "id": 356,
+                "id": 487,
                 "mutability": "mutable",
                 "name": "demands",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "302:14:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -210,7 +210,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 355,
+                  "id": 486,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "302:6:1",
@@ -224,12 +224,12 @@
               },
               {
                 "constant": false,
-                "id": 358,
+                "id": 489,
                 "mutability": "mutable",
                 "name": "contact",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "344:14:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -238,7 +238,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 357,
+                  "id": 488,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "344:6:1",
@@ -252,12 +252,12 @@
               },
               {
                 "constant": false,
-                "id": 360,
+                "id": 491,
                 "mutability": "mutable",
                 "name": "img0",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "388:11:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -266,7 +266,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 359,
+                  "id": 490,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "388:6:1",
@@ -280,12 +280,12 @@
               },
               {
                 "constant": false,
-                "id": 362,
+                "id": 493,
                 "mutability": "mutable",
                 "name": "img1",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "430:11:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -294,7 +294,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 361,
+                  "id": 492,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "430:6:1",
@@ -308,12 +308,12 @@
               },
               {
                 "constant": false,
-                "id": 364,
+                "id": 495,
                 "mutability": "mutable",
                 "name": "location0",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "452:16:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -322,7 +322,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 363,
+                  "id": 494,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "452:6:1",
@@ -336,12 +336,12 @@
               },
               {
                 "constant": false,
-                "id": 366,
+                "id": 497,
                 "mutability": "mutable",
                 "name": "location1",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "505:16:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -350,7 +350,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 365,
+                  "id": 496,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "505:6:1",
@@ -364,12 +364,12 @@
               },
               {
                 "constant": false,
-                "id": 368,
+                "id": 499,
                 "mutability": "mutable",
                 "name": "express",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "558:14:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -378,7 +378,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 367,
+                  "id": 498,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "558:6:1",
@@ -392,12 +392,12 @@
               },
               {
                 "constant": false,
-                "id": 370,
+                "id": 501,
                 "mutability": "mutable",
                 "name": "status",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "603:11:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -406,7 +406,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 369,
+                  "id": 500,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "603:4:1",
@@ -421,12 +421,12 @@
             ],
             "name": "info",
             "nodeType": "StructDefinition",
-            "scope": 372,
+            "scope": 503,
             "src": "58:647:1",
             "visibility": "public"
           }
         ],
-        "scope": 373,
+        "scope": 504,
         "src": "33:675:1"
       }
     ],
@@ -436,15 +436,15 @@
     "absolutePath": "/d/Code/Conflux/JustDonate/CharityFactory/library/CharityLib.sol",
     "exportedSymbols": {
       "CharityLib": [
-        372
+        503
       ]
     },
-    "id": 373,
+    "id": 504,
     "license": null,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 344,
+        "id": 475,
         "literals": [
           "solidity",
           ">=",
@@ -464,25 +464,25 @@
         "contractKind": "library",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 372,
+        "id": 503,
         "linearizedBaseContracts": [
-          372
+          503
         ],
         "name": "CharityLib",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "CharityLib.info",
-            "id": 371,
+            "id": 502,
             "members": [
               {
                 "constant": false,
-                "id": 346,
+                "id": 477,
                 "mutability": "mutable",
                 "name": "id",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "81:8:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -491,7 +491,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 345,
+                  "id": 476,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "81:4:1",
@@ -505,12 +505,12 @@
               },
               {
                 "constant": false,
-                "id": 348,
+                "id": 479,
                 "mutability": "mutable",
                 "name": "sponsor",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "118:15:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -519,7 +519,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 347,
+                  "id": 478,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "118:7:1",
@@ -534,12 +534,12 @@
               },
               {
                 "constant": false,
-                "id": 350,
+                "id": 481,
                 "mutability": "mutable",
                 "name": "helper",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "164:14:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -548,7 +548,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 349,
+                  "id": 480,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "164:7:1",
@@ -563,12 +563,12 @@
               },
               {
                 "constant": false,
-                "id": 352,
+                "id": 483,
                 "mutability": "mutable",
                 "name": "sponsorName",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "213:18:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -577,7 +577,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 351,
+                  "id": 482,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "213:6:1",
@@ -591,12 +591,12 @@
               },
               {
                 "constant": false,
-                "id": 354,
+                "id": 485,
                 "mutability": "mutable",
                 "name": "helperName",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "272:17:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -605,7 +605,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 353,
+                  "id": 484,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "272:6:1",
@@ -619,12 +619,12 @@
               },
               {
                 "constant": false,
-                "id": 356,
+                "id": 487,
                 "mutability": "mutable",
                 "name": "demands",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "302:14:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -633,7 +633,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 355,
+                  "id": 486,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "302:6:1",
@@ -647,12 +647,12 @@
               },
               {
                 "constant": false,
-                "id": 358,
+                "id": 489,
                 "mutability": "mutable",
                 "name": "contact",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "344:14:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -661,7 +661,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 357,
+                  "id": 488,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "344:6:1",
@@ -675,12 +675,12 @@
               },
               {
                 "constant": false,
-                "id": 360,
+                "id": 491,
                 "mutability": "mutable",
                 "name": "img0",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "388:11:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -689,7 +689,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 359,
+                  "id": 490,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "388:6:1",
@@ -703,12 +703,12 @@
               },
               {
                 "constant": false,
-                "id": 362,
+                "id": 493,
                 "mutability": "mutable",
                 "name": "img1",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "430:11:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -717,7 +717,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 361,
+                  "id": 492,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "430:6:1",
@@ -731,12 +731,12 @@
               },
               {
                 "constant": false,
-                "id": 364,
+                "id": 495,
                 "mutability": "mutable",
                 "name": "location0",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "452:16:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -745,7 +745,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 363,
+                  "id": 494,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "452:6:1",
@@ -759,12 +759,12 @@
               },
               {
                 "constant": false,
-                "id": 366,
+                "id": 497,
                 "mutability": "mutable",
                 "name": "location1",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "505:16:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -773,7 +773,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 365,
+                  "id": 496,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "505:6:1",
@@ -787,12 +787,12 @@
               },
               {
                 "constant": false,
-                "id": 368,
+                "id": 499,
                 "mutability": "mutable",
                 "name": "express",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "558:14:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -801,7 +801,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 367,
+                  "id": 498,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "558:6:1",
@@ -815,12 +815,12 @@
               },
               {
                 "constant": false,
-                "id": 370,
+                "id": 501,
                 "mutability": "mutable",
                 "name": "status",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 371,
+                "scope": 502,
                 "src": "603:11:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -829,7 +829,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 369,
+                  "id": 500,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "603:4:1",
@@ -844,12 +844,12 @@
             ],
             "name": "info",
             "nodeType": "StructDefinition",
-            "scope": 372,
+            "scope": 503,
             "src": "58:647:1",
             "visibility": "public"
           }
         ],
-        "scope": 373,
+        "scope": 504,
         "src": "33:675:1"
       }
     ],
@@ -861,7 +861,7 @@
   },
   "networks": {},
   "schemaVersion": "3.2.0",
-  "updatedAt": "2021-04-15T14:58:05.353Z",
+  "updatedAt": "2021-05-22T06:16:11.308Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

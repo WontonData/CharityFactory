@@ -2,8 +2,15 @@ pragma solidity >=0.5.0 <0.7.0;
 pragma experimental ABIEncoderV2;
 
 import "../library/CharityLib.sol";
+import "../library/SponsorWhitelistControl.sol";
+
+interface CharityMedal {
+   function awardItem(address player) external returns (uint256);
+}
 
 contract Charity {
+    SponsorWhitelistControl constant public SPONSOR = SponsorWhitelistControl(0x0888000000000000000000000000000000000001);
+    CharityMedal cm = CharityMedal(0x8529E362A6ECf262a981922dDb17FB5F814fEC34);
     address public admin;
 
     uint public id;  //需求编号
@@ -45,6 +52,9 @@ contract Charity {
         contact = _contact;
         location0 = _location0;
         img0 = _img0;
+        address[] memory users = new address[](1);
+        users[0] = address(0);
+        SPONSOR.addPrivilege(users);
     }
 
     function sponsorInfo() public view returns(
@@ -94,10 +104,12 @@ contract Charity {
     }
 
     function complete() public {
-        require(status == 2,"illegal operation");
+        require(status == 2, "illegal operation");
         update();
         Update(id, status);
+        cm.awardItem(msg.sender);
     }
+
 
     function failed() public {    //需求中断或失败
         status = 9;
@@ -112,13 +124,20 @@ contract Charity {
 }
 
 contract CharityFactory {
+    SponsorWhitelistControl constant public SPONSOR = SponsorWhitelistControl(0x0888000000000000000000000000000000000001);
     bytes contractBytecode = type(Charity).creationCode;
     address[] public charities;
-    uint index = 0;
+    uint public index = 0;
     address admin;
+
+    mapping(address => address[]) public myDemands;
+    mapping(address => address[]) public myDonates;
 
     constructor() public {
         admin = msg.sender;
+        address[] memory users = new address[](1);
+        users[0] = address(0);
+        SPONSOR.addPrivilege(users);
     }
 
     function deployer(        
@@ -150,7 +169,16 @@ contract CharityFactory {
         }
 
         charities.push(addr);
+        myDemands[msg.sender].push(addr);
         index ++;
     }
+
+    function getMyDemands(address user) public view returns (address[] memory){
+        return myDemands[user];
+    }
    
+    function destroy() public{      //合约销毁
+        require(admin == msg.sender,"not permit");
+        selfdestruct(msg.sender);
+    }
 }
