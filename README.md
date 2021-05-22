@@ -175,6 +175,8 @@ cfxtest:type.contract:acd5g4xhzzkgeey5bha8kpswxns0ac3kk63bauugkg
 
 ```json
 [
+    {
+      "inputs": [
         {
           "internalType": "address",
           "name": "_admin",
