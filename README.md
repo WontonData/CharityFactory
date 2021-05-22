@@ -736,5 +736,5 @@ cfxtest:type.contract:acd5g4xhzzkgeey5bha8kpswxns0ac3kk63bauugkg
       "stateMutability": "nonpayable",
       "type": "function"
     }
-  ],
+  ]
   ```
