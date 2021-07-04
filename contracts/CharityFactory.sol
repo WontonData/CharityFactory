@@ -4,6 +4,7 @@ pragma experimental ABIEncoderV2;
 import "../library/CharityLib.sol";
 import "../library/SponsorWhitelistControl.sol";
 
+/*获得慈善勋章-NFT */
 interface CharityMedal {
    function awardItem(address player) external returns (uint256);
 }
@@ -93,15 +94,15 @@ contract Charity {
         return status;
     }
 
-    function update() public { //更新状态 0:初始 1：通过 2：捐赠中 3：捐赠完成 -1：失败
+    function update() public { //更新状态 0:初始 1：通过 2：捐赠中 3：捐赠完成 9：失败
         status ++;
         emit Update(id, status);
     }
 
-    function rollback() public {  //测试用 可以使需求状态回到前一个位置
-        status --;
-        emit Update(id, status);
-    }
+    // function rollback() public {  //测试用 可以使需求状态回到前一个位置
+    //     status --;
+    //     emit Update(id, status);
+    // }
 
     function complete() public {
         require(status == 2, "illegal operation");
