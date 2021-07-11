@@ -99,19 +99,6 @@ contract Charity {
         emit Update(id, status);
     }
 
-    // function rollback() public {  //测试用 可以使需求状态回到前一个位置
-    //     status --;
-    //     emit Update(id, status);
-    // }
-
-    function complete() public {
-        require(status == 2, "illegal operation");
-        update();
-        Update(id, status);
-        cm.awardItem(msg.sender);
-    }
-
-
     function failed() public {    //需求中断或失败
         status = 9;
         emit Update(id, status);
@@ -176,6 +163,13 @@ contract CharityFactory {
 
     function getMyDemands(address user) public view returns (address[] memory){
         return myDemands[user];
+    }
+
+    function complete(address charity_addr) public {
+        Charity charity = Charity(charity_addr);
+        require(charity.sponsor == msg.sender, "illegal operation");
+        charity.update();
+        cm.awardItem(helper);
     }
    
     function destroy() public{      //合约销毁
