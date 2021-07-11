@@ -11,13 +11,13 @@ interface CharityMedal {
 
 contract Charity {
     SponsorWhitelistControl constant public SPONSOR = SponsorWhitelistControl(0x0888000000000000000000000000000000000001);
-    CharityMedal cm = CharityMedal(0x8529E362A6ECf262a981922dDb17FB5F814fEC34);
+
     address public admin;
 
     uint public id;  //需求编号
 
-    address sponsor;  //发起人address
-    address helper;    //捐助者address
+    address public sponsor;  //发起人address
+    address public helper;    //捐助者address
 
     string sponsorName;  //发起人 or 机构 名称
     string helperName;
@@ -113,6 +113,7 @@ contract Charity {
 
 contract CharityFactory {
     SponsorWhitelistControl constant public SPONSOR = SponsorWhitelistControl(0x0888000000000000000000000000000000000001);
+    CharityMedal cm = CharityMedal(0x8529E362A6ECf262a981922dDb17FB5F814fEC34);
     bytes contractBytecode = type(Charity).creationCode;
     address[] public charities;
     uint public index = 0;
@@ -167,9 +168,9 @@ contract CharityFactory {
 
     function complete(address charity_addr) public {
         Charity charity = Charity(charity_addr);
-        require(charity.sponsor == msg.sender, "illegal operation");
+        require(charity.sponsor() == msg.sender, "illegal operation");
         charity.update();
-        cm.awardItem(helper);
+        cm.awardItem(charity.helper());
     }
    
     function destroy() public{      //合约销毁
